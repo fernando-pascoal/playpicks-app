@@ -1,0 +1,46 @@
+{
+  "name": "playpicks",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@react-native-community/async-storage": "^1.4.2",
+    "@rimiti/react-native-toastify": "^1.1.0",
+    "axios": "^0.18.0",
+    "react": "^16.8.6",
+    "react-native": "0.59.8",
+    "react-native-cli": "^2.0.1",
+    "react-native-code-push": "^5.6.0",
+    "react-native-gesture-handler": "^1.2.2",
+    "react-native-svg": "^9.4.0",
+    "react-native-svg-transformer": "^0.13.0",
+    "react-native-vector-icons": "^6.4.2",
+    "react-navigation": "^3.11.0",
+    "react-redux": "^7.0.3",
+    "redux": "^4.0.1",
+    "redux-saga": "^1.0.2",
+    "styled-components": "^4.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/runtime": "^7.4.4",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^24.8.0",
+    "babel-plugin-root-import": "^6.2.0",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "jest": "^24.8.0",
+    "metro-react-native-babel-preset": "^0.54.1",
+    "prettier": "^1.17.1",
+    "react-test-renderer": "16.8.3",
+    "reactotron-react-native": "^3.6.0",
+    "reactotron-redux": "^3.1.0",
+    "reactotron-redux-saga": "^4.2.2"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}

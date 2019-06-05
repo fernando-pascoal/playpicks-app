@@ -1,0 +1,15 @@
+{
+  "sqltools.connections": [
+    {
+      "askForPassword": false,
+      "connectionTimeout": 30,
+      "database": "playpicks",
+      "dialect": "PostgreSQL",
+      "name": "playpicks",
+      "password": "admin",
+      "port": 5432,
+      "server": "127.0.0.1",
+      "username": "postgres"
+    }
+  ]
+}
