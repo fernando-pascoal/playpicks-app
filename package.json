@@ -7,6 +7,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "@react-native-community/async-storage": "^1.4.2",
     "@rimiti/react-native-toastify": "^1.1.0",
     "axios": "^0.18.0",
     "react": "^16.8.6",
