@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "~/components/Header";
+import Header from "~/src/components/Header";
 import {
   Container,
   Content,

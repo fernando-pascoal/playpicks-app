@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { Provider } from "react-redux";
-import "~/config/reactotron";
-import store from "~/store";
+import "~/src/config/reactotron";
+import store from "~/src/store";
 import Routes from "./routes";
-import { setNavigator } from "~/services/navigation";
+import { setNavigator } from "~/src/services/navigation";
 
 import OneSignal from "react-native-onesignal";
 import CodePush from "react-native-code-push";

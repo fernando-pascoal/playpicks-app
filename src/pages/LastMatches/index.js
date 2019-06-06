@@ -1,8 +1,8 @@
 import React, { Component, Fragment } from "react";
-import Header from "~/components/Header";
-import Match from "~/components/Match";
-import api from "~/services/api";
-import TabItem from "~/components/TabItem";
+import Header from "~/src/components/Header";
+import Match from "~/src/components/Match";
+import api from "~/src/services/api";
+import TabItem from "~/src/components/TabItem";
 
 import { Container, Title, TextError } from "./styles";
 import { ActivityIndicator, FlatList } from "react-native";

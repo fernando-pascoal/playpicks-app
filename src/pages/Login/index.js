@@ -9,9 +9,9 @@ import {
   TextBack,
   ActivityIndicator
 } from "./styles";
-import Logo from "~/assets/logo.svg";
+import Logo from "~/src/assets/logo.svg";
 
-import { Creators as LoginActions } from "~/store/ducks/login";
+import { Creators as LoginActions } from "~/src/store/ducks/login";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 

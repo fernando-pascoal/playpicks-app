@@ -1,8 +1,8 @@
 import { put, call } from "redux-saga/effects";
-import { navigate } from "~/services/navigation";
-import api from "~/services/api";
+import { navigate } from "~/src/services/navigation";
+import api from "~/src/services/api";
 
-import { Creators as LoginActions } from "~/store/ducks/login";
+import { Creators as LoginActions } from "~/src/store/ducks/login";
 
 export function* login(action) {
   const { user } = action.payload;

@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import Header from "~/components/Header";
-import TabItem from "~/components/TabItem";
+import Header from "~/src/components/Header";
+import TabItem from "~/src/components/TabItem";
 
-import api from "~/services/api";
+import api from "~/src/services/api";
 import Toast from "@rimiti/react-native-toastify";
 
 import {
@@ -20,7 +20,7 @@ import {
   ActivityIndicator
 } from "./styles";
 
-import { Creators as LoginActions } from "~/store/ducks/login";
+import { Creators as LoginActions } from "~/src/store/ducks/login";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 

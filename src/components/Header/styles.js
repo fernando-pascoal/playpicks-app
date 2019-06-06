@@ -1,5 +1,5 @@
 import styled from "styled-components/native";
-import { metrics, colors } from "~/styles";
+import { metrics, colors } from "~/src/styles";
 
 export const Container = styled.View`
   background-color: ${colors.defaultGreen};

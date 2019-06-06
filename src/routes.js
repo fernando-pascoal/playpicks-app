@@ -4,20 +4,20 @@ import {
   createBottomTabNavigator,
   createSwitchNavigator
 } from "react-navigation";
-import { colors } from "~/styles";
+import { colors } from "~/src/styles";
 
 /**
  * LOGIN ROUTES
  */
-import Login from "~/pages/Login";
+import Login from "~/src/pages/Login";
 
 /**
  * PUBLIC ROUTES
  */
-import LastMatches from "~/pages/LastMatches";
-import NewMatches from "~/pages/NewMatches";
-import Questions from "~/pages/Questions";
-import Plans from "~/pages/Plans";
+import LastMatches from "~/src/pages/LastMatches";
+import NewMatches from "~/src/pages/NewMatches";
+import Questions from "~/src/pages/Questions";
+import Plans from "~/src/pages/Plans";
 
 const tabNavigator = createBottomTabNavigator(
   {

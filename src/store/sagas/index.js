@@ -3,8 +3,8 @@ import { all, takeLatest } from "redux-saga/effects";
 /**
  * TYPES
  */
-import { Types as LoginTypes } from "~/store/ducks/login";
-import { Types as ChampionshipTypes } from "~/store/ducks/championship";
+import { Types as LoginTypes } from "~/src/store/ducks/login";
+import { Types as ChampionshipTypes } from "~/src/store/ducks/championship";
 
 /**
  * SAGA FUNCTIONS

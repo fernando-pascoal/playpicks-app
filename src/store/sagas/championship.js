@@ -1,7 +1,7 @@
 import { put, call } from "redux-saga/effects";
-import api from "~/services/api";
+import api from "~/src/services/api";
 
-import { Creators as ChampionshipActions } from "~/store/ducks/championship";
+import { Creators as ChampionshipActions } from "~/src/store/ducks/championship";
 
 export function* deleteChampionship(action) {
   const { id } = action.payload;
