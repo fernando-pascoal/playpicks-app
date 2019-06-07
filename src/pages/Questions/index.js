@@ -99,7 +99,6 @@ class Questions extends Component {
         success: "Obrigado! Responderemos você no email informado"
       });
     } catch (error) {
-      console.tron.log(error);
       let message = "Problemas de conexão, pode tentar tarde? :)";
 
       if (error.response && error.response.status === 400) {

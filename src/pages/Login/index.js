@@ -23,7 +23,6 @@ class Login extends Component {
 
   handlerBack = () => {
     const { navigation } = this.props;
-    console.log(this.props);
     navigation.navigate("Dashboard");
   };
 
