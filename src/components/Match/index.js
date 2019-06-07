@@ -15,7 +15,6 @@ import {
 
 const Match = props => {
   const { match } = props;
-  console.tron.log(match);
   return (
     <Container>
       <HeaderContainer>

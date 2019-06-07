@@ -7,8 +7,9 @@ import AsyncStorage from "@react-native-community/async-storage";
  ** Simulador IOS:           http://localhost:3333/
  */
 const api = axios.create({
-  baseURL: "http://165.22.190.47:3333"
+  baseURL: "http://35.198.27.139"
 });
+// baseURL: "http://165.22.190.47:3333"
 
 /**
  * Get token recebe o email e password, resultado positivo seta o token no Storage
