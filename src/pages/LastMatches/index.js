@@ -32,7 +32,9 @@ class LastMatches extends Component {
 
   loadMatches = async () => {
     try {
-      const matches = await api.get("/matches").then(resp => resp.data);
+      const matches = await api
+        .get("/matches?before=true")
+        .then(resp => resp.data);
       this.toastify.show("Partidas carregadas", 1000);
 
       return this.setState({
