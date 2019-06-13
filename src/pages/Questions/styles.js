@@ -1,12 +1,9 @@
 import styled from "styled-components/native";
 import { colors, metrics } from "~/src/styles";
 
-export const Container = styled.View`
+export const Container = styled.ScrollView`
   flex: 1;
   background-color: ${colors.dark};
-`;
-
-export const Content = styled.View`
   padding: ${metrics.basePadding};
 `;
 
@@ -19,13 +16,8 @@ export const Title = styled.Text`
 `;
 
 export const FormContainer = styled.View`
+  flex: 1;
   width: 100%;
-`;
-export const ViewImage = styled.View`
-  align-self: center;
-  width: 200px;
-  height: 100px;
-  margin-bottom: ${metrics.baseMargin};
 `;
 
 export const Input = styled.TextInput.attrs({
@@ -57,9 +49,10 @@ export const InputError = styled.TextInput.attrs({
 export const Button = styled.TouchableOpacity`
   background-color: ${colors.defaultGreen};
   border-radius: ${metrics.baseRadius};
-  height: 50px;
+  height: 40px;
   align-items: center;
   justify-content: center;
+  margin-bottom: 35px;
 `;
 export const Text = styled.Text`
   color: ${colors.white};
@@ -94,7 +87,6 @@ export const TextAreaError = styled.TextInput.attrs({
 })`
   color: ${colors.white};
   background-color: ${colors.darkLight};
-  margin-bottom: ${metrics.baseMargin};
   border-radius: ${metrics.baseRadius};
   padding: ${metrics.basePadding};
   height: 150px;

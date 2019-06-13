@@ -1,5 +1,7 @@
 import styled from "styled-components/native";
 import { colors, metrics } from "~/src/styles";
+import { Dimensions } from "react-native";
+const { width, scale } = Dimensions.get("window");
 
 export const Container = styled.View`
   background-color: ${colors.darkLight};
@@ -60,7 +62,7 @@ export const ClubeImage = styled.Image`
   min-height: 35px;
 `;
 export const ClubeText = styled.Text`
-  width: 100px;
+  width: ${width * scale < 600 ? "80px" : "100px"};
   text-align: center;
   color: ${colors.white};
   padding: ${metrics.littlePadding};

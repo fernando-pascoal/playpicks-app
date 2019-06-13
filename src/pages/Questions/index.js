@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import Header from "~/src/components/Header";
 import TabItem from "~/src/components/TabItem";
 
@@ -7,7 +7,6 @@ import Toast from "@rimiti/react-native-toastify";
 
 import {
   Container,
-  Content,
   Title,
   FormContainer,
   Text,
@@ -121,10 +120,10 @@ class Questions extends Component {
     } = this.state;
 
     return (
-      <Container>
+      <Fragment>
         <Toast position="center" ref={c => (this.toastify = c)} />
         <Header />
-        <Content>
+        <Container>
           <Title>Dúvidas? entre em contato já.</Title>
           <FormContainer>
             {!!error && <Text>{error}</Text>}
@@ -179,8 +178,8 @@ class Questions extends Component {
               )}
             </Button>
           </FormContainer>
-        </Content>
-      </Container>
+        </Container>
+      </Fragment>
     );
   }
 }
