@@ -15,17 +15,16 @@ class App extends Component {
     OneSignal.addEventListener("received", this.onRecived);
     OneSignal.addEventListener("opened", this.onOpened);
     OneSignal.addEventListener("ids", this.onIds);
+    OneSignal.configure();
   }
 
   onRecived = data => {};
   onOpened = notification => {};
-  onIds = onIds => {
-    //obtem o id específico da notificação para ser relacionado
-    //em tabela caso queira enviar uma notificação específica para um usuário
-  };
+  //obtem o id específico da notificação para ser relacionado
+  //em tabela caso queira enviar uma notificação específica para um usuário
+  onIds = onIds => {};
 
   componentWillUnmount() {
-    OneSignal.init("37dc8c58-d97d-4f2e-97b2-c754a8bd223e");
     OneSignal.removeEventListener("recived", this.onRecived);
     OneSignal.removeEventListener("opened", this.onOpened);
     OneSignal.removeEventListener("id", this.onIds);
