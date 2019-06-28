@@ -38,7 +38,6 @@ class NewMatches extends Component {
       const matches = await api
         .get("/matches?today=true")
         .then(resp => resp.data);
-
       this.toastify.show("Partidas carregadas", 1000);
       this.setState({ matches: matches.data, loading: false });
     } catch (error) {
