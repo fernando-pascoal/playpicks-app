@@ -1,7 +1,5 @@
 import React, { Component } from "react";
-import { Provider } from "react-redux";
 import "~/src/config/reactotron";
-import store from "~/src/store";
 import Routes from "./routes";
 import { setNavigator } from "~/src/services/navigation";
 
@@ -31,11 +29,7 @@ class App extends Component {
   }
 
   render() {
-    return (
-      <Provider store={store}>
-        <Routes ref={setNavigator} />
-      </Provider>
-    );
+    return <Routes ref={setNavigator} />;
   }
 }
 

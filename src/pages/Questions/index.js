@@ -19,10 +19,6 @@ import {
   ActivityIndicator
 } from "./styles";
 
-import { Creators as LoginActions } from "~/src/store/ducks/login";
-import { connect } from "react-redux";
-import { bindActionCreators } from "redux";
-
 class Questions extends Component {
   state = {
     name: "",
@@ -98,6 +94,7 @@ class Questions extends Component {
         success: "Obrigado! Responderemos você no email informado"
       });
     } catch (error) {
+      this.setState({ loading: false });
       let message = "Problemas de conexão, pode tentar tarde? :)";
 
       if (error.response && error.response.status === 400) {
@@ -105,7 +102,6 @@ class Questions extends Component {
       }
 
       this.toastify.show(message, 1000);
-      this.setState({ loading: false });
     }
   };
 
@@ -184,15 +180,4 @@ class Questions extends Component {
   }
 }
 
-mapStateToProps = state => ({
-  loading: state.login.loading,
-  error: state.login.error,
-  user: state.login.user
-});
-
-mapDispatchToProps = dispatch => bindActionCreators(LoginActions, dispatch);
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(Questions);
+export default Questions;

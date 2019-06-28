@@ -9,7 +9,7 @@ import { colors } from "~/src/styles";
 /**
  * LOGIN ROUTES
  */
-import Login from "~/src/pages/Login";
+//import Login from "~/src/pages/Login";
 
 /**
  * PUBLIC ROUTES
@@ -42,7 +42,6 @@ const tabNavigator = createBottomTabNavigator(
 const Routes = createAppContainer(
   createSwitchNavigator(
     {
-      Login,
       Plans,
       Dashboard: tabNavigator
     },
