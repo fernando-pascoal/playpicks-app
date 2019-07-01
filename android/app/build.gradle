@@ -1,13 +1,13 @@
-buildscript {
-    repositories {
-        maven { url 'https://plugins.gradle.org/m2/' } // Gradle Plugin Portal
-    }
-    dependencies {
-        classpath 'gradle.plugin.com.onesignal:onesignal-gradle-plugin:[0.12.1, 0.99.99]'
-    }
-}
+// buildscript {
+//     repositories {
+//         maven { url 'https://plugins.gradle.org/m2/' } // Gradle Plugin Portal
+//     }
+//     dependencies {
+//         classpath 'gradle.plugin.com.onesignal:onesignal-gradle-plugin:[0.12.1, 0.99.99]'
+//     }
+// }
 
-apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+// apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
 
 apply plugin: "com.android.application"
 
@@ -117,8 +117,8 @@ android {
         applicationId "com.playpicks"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName "2.0"
     }
     signingConfigs {
         release {
@@ -163,7 +163,7 @@ android {
 
 dependencies {
     implementation project(':@react-native-community_async-storage')
-    implementation project(':react-native-onesignal')
+    //implementation project(':react-native-onesignal')
     implementation project(':react-native-code-push')
     implementation project(':react-native-svg')
     implementation project(':react-native-gesture-handler')
